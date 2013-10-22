@@ -1,4 +1,6 @@
 *.gem
+.gitignore
+**/.DS_Store 
 .bundle
 Gemfile.lock
 pkg/*
