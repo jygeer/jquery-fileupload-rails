@@ -1,5 +1,5 @@
 /*
- * jQuery Iframe Transport Plugin 1.8.0
+ * jQuery Iframe Transport Plugin 1.8.1
  * https://github.com/blueimp/jQuery-File-Upload
  *
  * Copyright 2011, Sebastian Tschan
@@ -9,8 +9,7 @@
  * http://www.opensource.org/licenses/MIT
  */
 
-/*jslint unparam: true, nomen: true */
-/*global define, window, document */
+/* global define, window, document */
 
 (function (factory) {
     'use strict';
@@ -41,7 +40,9 @@
         if (options.async) {
             // javascript:false as initial iframe src
             // prevents warning popups on HTTPS in IE6:
+            /*jshint scripturl: true */
             var initialIframeSrc = options.initialIframeSrc || 'javascript:false;',
+            /*jshint scripturl: false */
                 form,
                 iframe,
                 addParamChar;
